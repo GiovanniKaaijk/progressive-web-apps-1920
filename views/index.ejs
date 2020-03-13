@@ -1,0 +1,22 @@
+<%- include ./partials/head.ejs %>
+<div class="container">
+  <form action="/search" method="POST" class="search">
+    <div>
+      <input name="search" id="search" type="text">
+      <button type="submit"><img src="/public/images/search.svg" alt=""></button>
+    </div>
+  </form>
+  <% if (query === false) { %>
+  <h1><%- heading %></h1>
+  <% } %>
+  <div class="grid">
+    <%for (var i in data.results){%>
+      <div class="img-wrapper">
+          <a href="/detail/<%=data.results[i].id%>">
+            <img src="<%=data.results[i].urls.regular%>" alt="">
+          </a>
+        </div>    
+    <%}%>
+</div>
+</div>
+<%- include ./partials/footer.ejs %>

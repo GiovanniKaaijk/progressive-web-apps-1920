@@ -1,0 +1,169 @@
+@font-face {
+    font-family: museoBolder;
+    src: url(../fonts/MuseoSans_700.otf);
+}
+@font-face {
+    font-family: museoBold;
+    src: url(../fonts/MuseoSans_500.otf);
+}
+@font-face {
+    font-family: museoRegular;
+    src: url(../fonts/MuseoSans_300.otf);
+}
+@font-face {
+    font-family: museoLight;
+    src: url(../fonts/MuseoSans-100.otf);
+}
+
+p, span, a, div, label, input {
+    font-family: 'museoLight',Helvetica, Arial, sans-serif;
+    color: #4C4E57;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'museoBolder', Arial, Helvetica, sans-serif;
+    color: #4C4E57;
+}
+
+a {
+	display: block;
+}
+
+.container {
+    margin: 0 10vw;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.grid .img-wrapper {
+    width: 100%;
+    height: 240px;
+}
+
+.grid .img-wrapper img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    max-height: 100%;;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.detail .img-wrapper img{
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 15px;
+}
+
+.personal .about {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal .about h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.personal .about p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.personal .about .links {
+    margin-top: auto;
+    display: flex;
+}
+
+.personal .about .links a {
+    margin-right: 10px;
+    display: flex;
+}
+
+.personal .about .links svg{
+    width: 22px;
+    height: auto;
+    margin-top: auto;
+    fill: #4C4E57;
+    transition: all .3s;
+}
+
+.personal .about .links svg:hover {
+    fill: #597593;
+}
+
+header {
+    height: 5vh;
+    box-sizing: border-box;
+    padding: 1vh 0;
+}
+
+header a {
+    height: 100%;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+}
+
+form {
+    height: 38px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+form div {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    position: relative;
+}
+
+form div input {
+    width: 100%;
+    padding: 5px 13px;
+    font-size: 18px;
+    outline: 0;
+    border-radius: 20px;
+    border: 2px solid #4C4E57;
+}
+
+form div button {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    cursor: pointer;
+}
+
+form div button img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

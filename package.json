@@ -1,0 +1,30 @@
+{
+    "name": "progressive-web-app",
+    "version": "1.0.0",
+    "description": "progressive-web-app",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "watch": "webpack --watch",
+        "concurrently": "concurrently \"webpack --watch\" \"nodemon ./server-build/bundle-back.js\""
+    },
+    "author": "Giovanni Kaaijk",
+    "license": "MIC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "chalk": "^3.0.0",
+        "concurrently": "^5.1.0",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "multer": "^1.4.2",
+        "node-fetch": "^2.6.0",
+        "nodemon": "^2.0.2",
+        "prerender-node": "^3.2.5",
+        "request": "^2.88.0",
+        "shrink-ray-current": "^4.1.2",
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-node-externals": "^1.7.2"
+    }
+}
