@@ -1,18 +1,18 @@
 @font-face {
     font-family: museoBolder;
-    src: url(../fonts/MuseoSans_700.otf);
+    src: url(./fonts/MuseoSans_700.otf);
 }
 @font-face {
     font-family: museoBold;
-    src: url(../fonts/MuseoSans_500.otf);
+    src: url(./fonts/MuseoSans_500.otf);
 }
 @font-face {
     font-family: museoRegular;
-    src: url(../fonts/MuseoSans_300.otf);
+    src: url(./fonts/MuseoSans_300.otf);
 }
 @font-face {
     font-family: museoLight;
-    src: url(../fonts/MuseoSans-100.otf);
+    src: url(./fonts/MuseoSans-100.otf);
 }
 
 p, span, a, div, label, input {

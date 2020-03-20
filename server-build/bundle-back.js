@@ -104,7 +104,7 @@ eval("const fetch = __webpack_require__(/*! node-fetch */ \"node-fetch\");\ncons
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const express = __webpack_require__(/*! express */ \"express\");\r\n\r\nconst router = express.Router();\r\nconst {\r\n    getImages,\r\n    getDetail,\r\n    getPreviousPage,\r\n    getResults\r\n} = __webpack_require__(/*! ../controllers/routing */ \"./controllers/routing.js\")\r\n\r\nrouter.get('/', getImages)\r\n    .get('/detail/:id', getDetail)\r\n    .get('/back', getPreviousPage)\r\n    .post('/search', getResults)\r\n\r\nmodule.exports = router;\n\n//# sourceURL=webpack:///./routes/routes.js?");
+eval("const express = __webpack_require__(/*! express */ \"express\");\r\n\r\nconst router = express.Router();\r\nconst {\r\n    getImages,\r\n    getDetail,\r\n    getPreviousPage,\r\n    getResults\r\n} = __webpack_require__(/*! ../controllers/routing */ \"./controllers/routing.js\")\r\n\r\nrouter.get('/', getImages)\r\n    .get('/detail/:id', getDetail)\r\n    .get('/back', getPreviousPage)\r\n    .post('/search', getResults)\r\n \r\nmodule.exports = router;\n\n//# sourceURL=webpack:///./routes/routes.js?");
 
 /***/ }),
 
@@ -115,7 +115,7 @@ eval("const express = __webpack_require__(/*! express */ \"express\");\r\n\r\nco
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const express = __webpack_require__(/*! express */ \"express\");\r\nconst bodyParser = __webpack_require__(/*! body-parser */ \"body-parser\")\r\n\r\nconst config = {\r\n    port: 3000\r\n}\r\n\r\nconst app = express();\r\nconst routes = __webpack_require__(/*! ./routes/routes */ \"./routes/routes.js\");\r\n\r\napp.set('view engine', 'ejs')\r\n    .set('views', 'views')\r\n    .use('/public', express.static('public'))\r\n    .use(bodyParser.urlencoded({ extended: true }))\r\n    .use(__webpack_require__(/*! prerender-node */ \"prerender-node\"))\r\n    .use(routes)\r\n\r\napp.listen(config.port, function() {\r\n    console.log(`Application started on port: ${config.port}`);\r\n});\n\n//# sourceURL=webpack:///./server.js?");
+eval("const express = __webpack_require__(/*! express */ \"express\");\r\nconst bodyParser = __webpack_require__(/*! body-parser */ \"body-parser\")\r\n\r\nconst config = {\r\n    port: 3000\r\n}\r\n\r\nconst app = express();\r\nconst routes = __webpack_require__(/*! ./routes/routes */ \"./routes/routes.js\");\r\n\r\napp.set('view engine', 'ejs')\r\n    .set('views', 'views')\r\n    .use('/public', express.static('public'))\r\n    .use(bodyParser.urlencoded({ extended: true }))\r\n    .use(__webpack_require__(/*! prerender-node */ \"prerender-node\"))\r\n    .use(routes)\r\n\r\napp.listen(config.port, function() {\r\n    console.log(`Application started on port: ${config.port}`);\r\n}); \n\n//# sourceURL=webpack:///./server.js?");
 
 /***/ }),
 

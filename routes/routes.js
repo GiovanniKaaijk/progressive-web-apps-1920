@@ -12,5 +12,5 @@ router.get('/', getImages)
     .get('/detail/:id', getDetail)
     .get('/back', getPreviousPage)
     .post('/search', getResults)
-
+ 
 module.exports = router;

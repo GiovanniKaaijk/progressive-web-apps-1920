@@ -17,4 +17,4 @@ app.set('view engine', 'ejs')
 
 app.listen(config.port, function() {
     console.log(`Application started on port: ${config.port}`);
-});
+}); 
