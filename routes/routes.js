@@ -12,5 +12,10 @@ router.get('/', getImages)
     .get('/detail/:id', getDetail)
     .get('/back', getPreviousPage)
     .post('/search', getResults)
+    .get('/offline', (req, res) => {
+        res.render('offline', {
+            title: 'offline'
+        })
+    })
  
 module.exports = router;

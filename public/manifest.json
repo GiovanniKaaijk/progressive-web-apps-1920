@@ -3,12 +3,11 @@
     "name": "Rebuild of the Unsplash API",
     "description": "search hd images",
     "icons": [{
-        "src": "/img/logo.png",
-        "type": "image/png",
-        "sizes": "192x192"
+        "src": "/images/unsplash.jpg",
+        "type": "image/jpg",
+        "sizes": "200x200"
     }],
     "start_url": "/",
-    "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
     "theme_color": "#ffffff"

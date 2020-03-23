@@ -47,12 +47,13 @@ function getDetail(req, res) {
 }
 
 function getPreviousPage(req, res, next) {
-	res.redirect("/");
+	res.redirect("/")
 }
 
 async function getResults(req, res) {
 	if (req.body.search) {
-        homeQuery = req.body.search
+		homeQuery = req.body.search
+		console.log(homeQuery)
 		fetch(`https://api.unsplash.com/search/photos?page=1&query=${req.body.search}&client_id=${clientId}`)
 			.then(res => res.json())
 			.then(body => {
