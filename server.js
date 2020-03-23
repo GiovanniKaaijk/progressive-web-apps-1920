@@ -2,9 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const compression = require('compression')
 
-const config = {
-    port: 3001
-}
+const port = process.env.PORT || 3001
 
 const app = express();
 const routes = require('./routes/routes');
@@ -21,6 +19,6 @@ app.set('view engine', 'ejs')
     .use(require('prerender-node'))
     .use(routes)
 
-app.listen(config.port, function() {
-    console.log(`Application started on port: ${config.port}`);
+app.listen(port, function() {
+    console.log(`Application started on port: ${port}`);
 }); 
