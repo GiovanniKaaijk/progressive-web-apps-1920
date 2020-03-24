@@ -8,7 +8,7 @@
         "dev": "nodemon server.js",
         "watch": "webpack --watch",
         "concurrently": "concurrently \"webpack --watch\" \"nodemon server.js\"",
-        "build": "webpack"
+        "build": "webpack --mode=production"
     },
     "author": "Giovanni Kaaijk",
     "license": "MIC",

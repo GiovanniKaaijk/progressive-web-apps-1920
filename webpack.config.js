@@ -5,7 +5,7 @@ const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         index: "./public/js/script.js",
         style: "./public/css/style.css",

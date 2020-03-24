@@ -1,6 +1,6 @@
 const CORE_CACHE = 2
 const CORE_CACHE_NAME = `demo-core-v${CORE_CACHE}`
-const CORE_ASSETS = ["/offline", "./images/unsplash.jpg", "./dist/index.bundle.js", "./dist/style.css", "./dist/fonts/MuseoSans-100.otf","./dist/fonts/MuseoSans-300.otf","./dist/fonts/MuseoSans_700.otf","./dist/fonts/MuseoSans_500.otf",] 
+const CORE_ASSETS = ["manifest.json","/offline", "./images/unsplash.jpg", "./dist/index.bundle.js", "./dist/style.css", "./dist/fonts/MuseoSans-100.otf","./dist/fonts/MuseoSans-300.otf","./dist/fonts/MuseoSans_700.otf","./dist/fonts/MuseoSans_500.otf",] 
 
 self.addEventListener('install', (e) => {
     console.log("Installed")

@@ -9,6 +9,7 @@ function getImages(req, res) {
 	)
 		.then(res => res.json())
 		.then(body => {
+			console.log(body)
 			res.render("index", {
 				title: "Unsplash img finder",
                 heading: "hello",
