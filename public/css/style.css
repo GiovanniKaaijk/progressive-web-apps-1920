@@ -167,3 +167,10 @@ form div button img {
     height: 20px;
     cursor: pointer;
 }
+
+
+label, .hidden {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
