@@ -11,6 +11,7 @@ input.addEventListener('input', function() {
             fetch(`https://api.unsplash.com/search/photos?page=1&query=${input.value}&client_id=${clientId}`)
             .then(res => res.json())
             .then(res => {
+                console.log(res.results)
                 const el = document.querySelector('.grid')
                 if(res.results) {
                     const articles = document.querySelectorAll('.grid .img-wrapper')

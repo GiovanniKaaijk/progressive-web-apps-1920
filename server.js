@@ -10,7 +10,7 @@ const routes = require('./routes/routes');
 app.set('view engine', 'ejs')
     .set('views', 'views')
     .use(compression())
-    app.use((req, res, next) => {
+app.use((req, res, next) => {
         res.header('Cache-Control', 'max-age=2592000000');
         next();
     })

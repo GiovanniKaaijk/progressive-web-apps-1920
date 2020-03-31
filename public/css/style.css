@@ -1,18 +1,22 @@
 @font-face {
     font-family: museoBolder;
     src: url(./fonts/MuseoSans_700.otf);
+    font-display: swap;
 }
 @font-face {
     font-family: museoBold;
     src: url(./fonts/MuseoSans_500.otf);
+    font-display: swap;
 }
 @font-face {
     font-family: museoRegular;
     src: url(./fonts/MuseoSans-300.otf);
+    font-display: swap;
 }
 @font-face {
     font-family: museoLight;
     src: url(./fonts/MuseoSans-100.otf);
+    font-display: swap;
 }
 
 p, span, a, div, label, input {

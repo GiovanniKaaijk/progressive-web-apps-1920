@@ -15,7 +15,7 @@
     <%for (var i in data.results){%>
       <div class="img-wrapper">
           <a href="/detail/<%=data.results[i].id%>" aria-label="<%=data.results[i].id%>">
-            <img src="<%=data.results[i].urls.regular%>" alt="">
+            <img loading="lazy" src="<%=data.results[i].urls.small%>" alt="">
           </a>
         </div>    
     <%}%>

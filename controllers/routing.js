@@ -29,7 +29,7 @@ function getDetail(req, res) {
 				title: body.description,
 				heading: body.description,
 				data: {
-					img: body.urls.regular,
+					img: body.urls.regular ? body.urls.regular : null,
 					download: body.links.download,
 					likes: body.likes,
 					user: body.user.username,
