@@ -148,9 +148,11 @@ Webpack also minifies the Js by using ```webpack --mode=production```
 ##### Je begrijpt hoe de critical rendering path werkt, en hoe je deze kan optimaliseren
 * Het critical rendering path bestaat uit de stappen die voor de browser nodig zijn voordat de browser een pagina aan de gebruiker kan serveren. Ik heb dit geoptimaliseerd door compression te gebruiken, minify te gebruiken en door afbeeldingen 'lazy' in te laden.
 
-<img width="800" src="https://github.com/kylebot0/progressive-web-apps-1920/blob/master/gh-images/6b78bb51e57ec3ba45ed2418e5f748fe.png">
+<img width="800" src="https://user-images.githubusercontent.com/43671292/78035772-d5908500-7369-11ea-8ac4-e1c2c4ea3f8d.png">
 
 > The result of google chrome lighthouse
+
+The performance results are low, because the images from unsplash are really big. This also decreases the accability.
 
 
 
